@@ -8,7 +8,7 @@ header.forEach((header) => {
     headerHTML += `
   
         <div class="header-logo">
-            <img src="${header.image}" alt="logo">
+            <p class="logoTitle"><a href="index.html">${header.name} <i class="fa fa-shopping-cart"></i></a></p>
         </div>
         <div class="hamburger-menu">
             <span></span>

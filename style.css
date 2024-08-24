@@ -8,6 +8,7 @@
     --text-mix-color: #fff;
     --random-color: #ddd;
     --footer-random: #fdfddf;
+    --fades: background-color 0.3s ease;
 }
 
 * {
@@ -45,6 +46,20 @@ header {
     height: 50px;
 }
 
+.header-logo p.logoTitle {
+    padding: 10px;
+    background-color: var(--text-mix-color);
+    border-radius: 5px;   
+    transition: var(--fades); 
+}
+
+.header-logo p.logoTitle a {
+    font-weight: bolder;
+    color: var(--main-color);
+    font-size: 1rem;
+    text-decoration: none;
+}
+
 .header-search {
     margin-left: auto;
     display: flex;
@@ -67,7 +82,7 @@ header {
     cursor: pointer;
     margin-left: 8px;
     font-size: 16px;
-    transition: background-color 0.3s ease;
+    transition: var(--fades);
 }
 
 .header-search button:active:focus {
@@ -153,7 +168,7 @@ header nav a:hover {
     width: -moz-fit-content;
     width: fit-content;
     font-size: 16px;
-    transition: background-color 0.3s ease;
+    transition: var(--fades);
 }
 
 .hero .btn2 a {
@@ -430,7 +445,7 @@ footer {
     bottom: 20px;
     right: 20px;
     z-index: 1000;
-    transition: background-color 0.3s ease;
+    transition: var(--fades);
 }
 
 #back-to-top:hover {

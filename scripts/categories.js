@@ -1,5 +1,6 @@
 const header = [{
     image: 'images/Dambwe-STORE.svg',
+    name: 'StoreDambwe'
 }];
 
 const categories = [{
@@ -23,7 +24,7 @@ header.forEach((header) => {
     headerHTML += `
   
         <div class="header-logo">
-            <img src="${header.image}" alt="logo">
+           <h1 class="logoTitle"><a href="index.html">${header.name}<i class="fa fa-shopping-cart"></i></a></h1>
         </div>
         <div class="hamburger-menu">
             <span></span>

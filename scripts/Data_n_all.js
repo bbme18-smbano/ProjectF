@@ -1,5 +1,6 @@
 export const header = [{
     image: 'images/Dambwe-STORE.svg',
+    name: 'StoreDambwe'
 }];
 
 export const products = [{
