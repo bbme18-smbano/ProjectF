@@ -497,6 +497,7 @@ footer {
     .hero-text {
         text-align: center;
         width: 100%;
+        flex-direction: column;
     }
 
     .footer-top .row {
