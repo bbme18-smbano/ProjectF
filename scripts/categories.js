@@ -72,3 +72,10 @@ categories.forEach((categories) => {
 document.querySelector('header').innerHTML = headerHTML;
 
 document.querySelector('.js-categories-grid').innerHTML = categoriesHTML;
+
+const hamburgerMenu = document.querySelector('.hamburger-menu');
+const nav = document.querySelector('nav');
+
+hamburgerMenu.addEventListener('click', () => {
+    nav.classList.toggle('active');
+});
