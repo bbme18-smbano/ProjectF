@@ -61,6 +61,10 @@ header {
     text-decoration: none;
 }
 
+.header-logo p.logoTitle a:hover {
+    color: var(--text-color);
+}
+
 .header-search {
     margin-left: auto;
     display: flex;
@@ -276,7 +280,7 @@ button .fa-shopping-cart {
 }
 
 .fa:hover {
-    color: var(--text-mix-color);
+    color: var(--text-color);
 }
 
 .btn1:hover {
