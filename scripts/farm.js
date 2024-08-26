@@ -30,8 +30,8 @@ header.forEach((header) => {
         </div>
 
         <div class="header-search">
-            <i class="fa fa-shopping-cart cart-plus"></i>
-            <div class="cart-quantity js-cart-quantity cart-plus">0</div>
+            <a class="header-fa" href="checkout.html"> <i class="fa fa-shopping-cart cart-plus"></i>
+            <div class="cart-quantity js-cart-quantity cart-plus">0</div> </a>
         </div>
 
             </div>

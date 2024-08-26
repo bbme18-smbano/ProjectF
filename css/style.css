@@ -279,6 +279,15 @@ button .fa-shopping-cart {
   margin: 2px;
 }
 
+.header-fa {
+  color: var(--text-mix-color-mix-color);
+  text-decoration: none;
+}
+
+.header-fa fa:hover {
+  color: var(--border-color);
+}
+
 .fa:hover {
   color: var(--text-color);
 }
