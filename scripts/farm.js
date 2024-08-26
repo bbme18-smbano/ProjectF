@@ -24,17 +24,20 @@ header.forEach((header) => {
                 <li><a href="">Contact</a></li>
             </ul>
         </nav>
+        <div class="header-mid">
         <div class="header-search">
             <input type="search" placeholder="Search Products...">
             <button>Search</button>
         </div>
-
-        <div class="header-search">
-            <a class="header-fa" href="checkout.html"> <i class="fa fa-shopping-cart cart-plus"></i>
-            <div class="cart-quantity js-cart-quantity cart-plus">0</div> </a>
         </div>
 
-            </div>
+        <div class="header-right">
+        <div class="header-fa">
+            <a href="checkout.html"> <i class="fa fa-shopping-cart cart-plus"></i>
+            <div class="cart-quantity js-cart-quantity cart-plus">0</div> </a>
+        </div>
+        </div>
+        </div>
     `;
 })
 
