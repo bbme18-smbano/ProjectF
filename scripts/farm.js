@@ -1,5 +1,6 @@
 import { cart, addToCart } from './cart.js';
 import { header, products } from './Data_n_all.js';
+import { formatCurrency } from './utilities/calculate_cash.js';
 
 let headerHTML = '';
 let productsHTML = '';
@@ -48,7 +49,7 @@ products.forEach((product) => {
                 
                     <img class="product-image" src="${product.image}" alt="">
                     <h3 class="product-name">${product.name}</h3>
-                    <p class="product-price">MK${(product.dollar * 1734)/* converts dollars to kwacha 'by the time i was making this 1 dollar was equall to 1734 with some floating crapp' who cares anyways !!!! */.toFixed(2)}</p>
+                    <p class="product-price">MK${formatCurrency(product.dollar)}</p>
                     <div class="view-details">
                         <button class="btn1 add-to-cart js-add-to-cart"
                         data-product-id="${product.id}"><i
