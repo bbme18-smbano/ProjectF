@@ -1,8 +1,3 @@
-const header = [{
-    image: 'images/Dambwe-STORE.svg',
-    name: 'StoreDambwe'
-}];
-
 const categories = [{
     image: 'images/IMG-20240711-WA0005.jpg',
     name: 'Shoes and Sneakers',
@@ -17,41 +12,7 @@ const categories = [{
     description: 'Get your top qulity local and international brands and Merch at an in town price in our Store'
 }];
 
-let headerHTML = '';
 let categoriesHTML = '';
-
-header.forEach((header) => {
-    headerHTML += `
-  
-        <div class="header-logo">
-           <h1 class="logoTitle"><a href="index.html">${header.name}<i class="fa fa-shopping-cart"></i></a></h1>
-        </div>
-        <div class="hamburger-menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="header-search">
-            <input type="search" placeholder="Search Products...">
-            <button>Search</button>
-        </div>
-
-        <div class="header-search">
-            <i class="fa fa-shopping-cart cart-plus"></i>
-            <div class="cart-quantity js-cart-quantity cart-plus">0</div>
-        </div>
-
-            </div>
-    `;
-})
 
 categories.forEach((categories) => {
     categoriesHTML += `
@@ -69,13 +30,4 @@ categories.forEach((categories) => {
     `;
 })
 
-document.querySelector('header').innerHTML = headerHTML;
-
 document.querySelector('.js-categories-grid').innerHTML = categoriesHTML;
-
-const hamburgerMenu = document.querySelector('.hamburger-menu');
-const nav = document.querySelector('nav');
-
-hamburgerMenu.addEventListener('click', () => {
-    nav.classList.toggle('active');
-});

@@ -8,3 +8,9 @@ flex: 1;
   border-bottom-left-radius: 4px;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
+
+
+  <a class="nav-link" href="index.html"><i class="fa fa-home"></i></a></li>
+        <a class="nav-link" href=""><i class="fa fa-info"></i></a></li>
+        <a class="nav-link" href=""><i class="fa fa-bell"></i></a></li>
+        <a class="nav-link" href="products.html"><i class="fa fa-shopping-cart"></i></a></li>

@@ -11,26 +11,7 @@ header.forEach((header) => {
         <div class="header-logo">
             <p class="logoTitle"><a href="index.html">${header.name} <i class="fa fa-shopping-cart"></i></a></p>
         </div>
-        <div class="hamburger-menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="header-mid">
-        <div class="header-search">
-            <input type="search" placeholder="Search Products...">
-            <button>Search</button>
-        </div>
-        </div>
-
+      
         <div class="header-right">
         <div class="header-fa">
             <a href="checkout.html"> <i class="fa fa-shopping-cart cart-plus"></i>
@@ -84,13 +65,6 @@ document.querySelectorAll('.js-add-to-cart')
             updateCartQuantity();
         });
     });
-
-const hamburgerMenu = document.querySelector('.hamburger-menu');
-const nav = document.querySelector('nav');
-
-hamburgerMenu.addEventListener('click', () => {
-    nav.classList.toggle('active');
-});
 
 const backToTop = document.getElementById('back-to-top');
 
