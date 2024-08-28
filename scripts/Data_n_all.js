@@ -54,3 +54,21 @@ export const products = [{
     name: 'Books',
     dollar: 1
 }];
+
+export const nav = [{
+    icon: 'home',
+    name: 'HOME',
+    link: 'index.html'
+}, {
+    icon: 'search',
+    name: 'SEARCH',
+    link: ''
+}, {
+    icon: 'bell',
+    name: 'NOTIFICATIONS',
+    link: ''
+}, {
+    icon: 'shopping-cart',
+    name: 'CART',
+    link: 'checkout.html'
+}];

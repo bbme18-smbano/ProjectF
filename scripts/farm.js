@@ -1,9 +1,10 @@
 import { cart, addToCart } from './cart.js';
-import { header, products } from './Data_n_all.js';
+import { header, products, nav } from './Data_n_all.js';
 import { formatCurrency } from './utilities/calculate_cash.js';
 
 let headerHTML = '';
 let productsHTML = '';
+let navHTML = '';
 
 header.forEach((header) => {
     headerHTML += `
@@ -31,21 +32,33 @@ products.forEach((product) => {
     productsHTML += `
 
     
-    <div class="product-card">
+<div class="product-card">
                 
-                    <img class="product-image" src="${product.image}" alt="">
-                    <h3 class="product-name">${product.name}</h3>
-                    <p class="product-price">MK${formatCurrency(product.dollar)}</p>
-                    <div class="view-details">
-                        <button class="btn1 add-to-cart js-add-to-cart"
+        <img class="product-image" src="${product.image}" alt="">
+            <h3 class="product-name">${product.name}</h3>
+                <p class="product-price">MK${formatCurrency(product.dollar)}</p>
+    <div class="view-details">
+        <button class="btn1 add-to-cart js-add-to-cart"
                         data-product-id="${product.id}"><i
                                     class="fa fa-shopping-cart"></i></button>
-                        <button class="btn2"><a href="view-details.html">View Details</a></button>
-                    </div>
+        <button class="btn2"><a href="view-details.html">View Details</a></button>
+     </div>
 
-            </div>
+</div>
     `;
 })
+
+nav.forEach((nav) => {
+    navHTML += `
+    <a href="${nav.link}" class="nav-link">
+            <i class="fa fa-${nav.icon} nav-icon"></i>
+            <span class="nav-text">${nav.name}</span>
+        </a>
+    `;
+    
+})
+
+document.querySelector('nav').innerHTML = navHTML;
 
 document.querySelector('.js-products-grid').innerHTML = productsHTML;
 
