@@ -12,11 +12,13 @@ header.forEach((header) => {
             <p class="logoTitle"><a href="index.html">${header.name} <i class="fa fa-shopping-cart"></i></a></p>
         </div>
       
+    <div class="header-mid">
+        Your Online Store
+      </div>
+
         <div class="header-right">
-        <div class="header-fa">
-            <a href="checkout.html"> <i class="fa fa-shopping-cart cart-plus"></i>
+            <a class="header-fa" href="checkout.html"> <i class="fa fa-shopping-cart cart-plus"></i>
             <div class="cart-quantity js-cart-quantity cart-plus">0</div> </a>
-        </div>
         </div>
         </div>
     `;
