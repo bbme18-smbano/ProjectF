@@ -60,6 +60,10 @@ export const nav = [{
     name: 'HOME',
     link: 'index.html'
 }, {
+    icon: 'shop',
+    name: 'STORE',
+    link: 'products.html'
+}, {
     icon: 'search',
     name: 'SEARCH',
     link: ''
