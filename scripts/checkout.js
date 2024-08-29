@@ -2,6 +2,7 @@ import { cart, removeFromCart } from './cart.js';
 import { products } from './Data_n_all.js';
 import {formatCurrency} from './utilities/calculate_cash.js';
 
+dayjs();
 
 let cartSummaryHTML = '';
 
