@@ -3,10 +3,12 @@ export let cart = JSON.parse(localStorage.getItem('cart'));
 if(!cart) {
     cart = [{
         productId: '2024-0106-2022',
-        quantity: 8
+        quantity: 2,
+        deliveryOptionId:'1'
     },{
         productId: '2024-0106-2023',
-        quantity: 3
+        quantity: 1,
+        deliveryOptionId: '2'
     }];
 }
 
@@ -28,7 +30,8 @@ export function addToCart(productId) {
     } else {
         cart.push({
             productId: productId,
-            quantity: 1
+            quantity: 1,
+            deliveryOptionId: '1'
         });
     }
 

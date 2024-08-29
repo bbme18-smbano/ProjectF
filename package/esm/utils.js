@@ -1,4 +1,4 @@
-import * as C from './constant';
+import * as C from './constant.js';
 
 var padStart = function padStart(string, length, pad) {
   var s = String(string);

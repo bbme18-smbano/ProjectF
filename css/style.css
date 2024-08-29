@@ -717,7 +717,7 @@ body {
 p {
   margin: 0;
 }
-
+*/
 button {
   cursor: pointer;
 }
@@ -767,7 +767,7 @@ input, select, button {
   background-color: rgb(237, 253, 255);
   box-shadow: none;
 }
-*/
+
 /* These styles will limit text to 2 lines. Anything
    beyond 2 lines will be replaced with "..."
    You can find this code by using an A.I. tool or by

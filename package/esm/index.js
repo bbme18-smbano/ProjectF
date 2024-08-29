@@ -1,6 +1,6 @@
-import * as C from './constant';
-import en from './locale/en';
-import U from './utils';
+import * as C from './constant.js';
+import en from './locale/en.js';
+import U from './utils.js';
 var L = 'en'; // global locale
 
 var Ls = {}; // global loaded locale
