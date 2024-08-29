@@ -2,7 +2,9 @@ import { cart, removeFromCart } from './cart.js';
 import { products } from './Data_n_all.js';
 import {formatCurrency} from './utilities/calculate_cash.js';
 
-dayjs();
+const today = dayjs();
+const deliveryDate = today.add(7, 'days');
+deliveryDate.format()
 
 let cartSummaryHTML = '';
 
