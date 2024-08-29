@@ -1,10 +1,18 @@
-export let cart = [{
-    productId: '2024-0106-2022',
-    quantity: 8
-},{
-    productId: '2024-0106-2023',
-    quantity: 3
-}];
+export let cart = JSON.parse(localStorage.getItem('cart'));
+
+if(!cart) {
+    cart = [{
+        productId: '2024-0106-2022',
+        quantity: 8
+    },{
+        productId: '2024-0106-2023',
+        quantity: 3
+    }];
+}
+
+function saveToStorage() {
+    localStorage.setItem('cart', JSON.stringify(cart));
+}
 
 export function addToCart(productId) {
     let matchingItem;
@@ -23,6 +31,8 @@ export function addToCart(productId) {
             quantity: 1
         });
     }
+
+    saveToStorage();
 }
 
 export function removeFromCart(productId) {
@@ -35,4 +45,6 @@ export function removeFromCart(productId) {
     });
 
     cart = newCart;
+
+    saveToStorage();
 }
