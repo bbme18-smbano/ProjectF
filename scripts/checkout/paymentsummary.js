@@ -1,6 +1,6 @@
 import { cart } from '../cart.js';
-import { getProduct } from '../products.js';
-import { getDeliveryOption } from '../deliveryOptions.js';
+import { getProduct, products } from '../products.js';
+import { deliveryOptions, getDeliveryOption } from '../deliveryOptions.js';
 import { formatCurrency } from '../utilities/calculate_cash.js';
 
 
@@ -27,7 +27,7 @@ export function renderPaymentSummary() {
             </div>
 
             <div class="payment-summary-row">
-                <div>Items (3):</div>
+                <div>Items (0):</div>
                 <div class="payment-summary-money">MK${formatCurrency(productDollar)}</div>
             </div>
 
