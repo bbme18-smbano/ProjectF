@@ -14,3 +14,11 @@ flex: 1;
         <a class="nav-link" href=""><i class="fa fa-info"></i></a></li>
         <a class="nav-link" href=""><i class="fa fa-bell"></i></a></li>
         <a class="nav-link" href="products.html"><i class="fa fa-shopping-cart"></i></a></li>
+
+
+        <div class="main">
+          <div class="page-title">Review your order</div>
+          <div class="checkout-grid">
+              <div class="order-summary js-order-summary">
+                
+              </div>
