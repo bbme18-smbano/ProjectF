@@ -37,14 +37,9 @@ function renderOrderSummary(){
 
 
     const today = dayjs();
-    const deliveryDate = today.add(
-        deliveryOption.deliveryDays,
-        'days'
-    );
+    const deliveryDate = today.add(deliveryOption.deliveryDays, 'days');
 
-    const dateString = deliveryDate.format(
-        'dddd, MMMM, D'
-    );
+    const dateString = deliveryDate.format('dddd, MMMM, D');
 
     cartSummaryHTML += `
         <div class="cart-item-container js-cart-item-container-${matchingProduct.id}">
@@ -95,14 +90,9 @@ function renderOrderSummary(){
 
     deliveryOptions.forEach((deliveryOption) => {
         const today = dayjs();
-        const deliveryDate = today.add(
-            deliveryOption.deliveryDays,
-            'days'
-        );
+        const deliveryDate = today.add(deliveryOption.deliveryDays, 'days');
 
-        const dateString = deliveryDate.format(
-            'dddd, MMMM, D'
-        );
+        const dateString = deliveryDate.format('dddd, MMMM, D');
 
 
         const priceString = deliveryOption.dollar === 0
