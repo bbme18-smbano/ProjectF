@@ -1,5 +1,5 @@
 import { cart, addToCart } from './cart.js';
-import { header, products, nav } from './Data_n_all.js';
+import { header, products, nav } from './products.js';
 import { formatCurrency } from './utilities/calculate_cash.js';
 
 let headerHTML = '';

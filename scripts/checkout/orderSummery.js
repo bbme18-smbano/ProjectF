@@ -1,8 +1,8 @@
 import { cart, removeFromCart, updateDeliveryOption } from '../cart.js';
-import { products } from '../Data_n_all.js';
+import { products, getProduct } from '../products.js';
 import { formatCurrency } from '../utilities/calculate_cash.js';
 import dayjs from '../../package/esm/index.js';
-import { deliveryOptions } from '../deliveryOptions.js';
+import { deliveryOptions, getDeliveryOption } from '../deliveryOptions.js';
 
 
 const today = dayjs();
@@ -16,24 +16,12 @@ export function renderOrderSummary() {
     cart.forEach((cartItem) => {
     const productId = cartItem.productId;
 
-    let matchingProduct;
-
-    products.forEach((product) => {
-        if (product.id === productId) {
-            matchingProduct = product;
-    }
-    });
+    const matchingProduct = getProduct(productId);
 
 
     const deliveryOptionId = cartItem.deliveryOptionId;
 
-    let deliveryOption;
-
-    deliveryOptions.forEach((option) => {
-        if (option.id === deliveryOptionId) {
-            deliveryOption = option;
-        }
-    });
+    const deliveryOption = getDeliveryOption(deliveryOptionId);
 
 
     const today = dayjs();
