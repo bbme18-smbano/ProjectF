@@ -3,11 +3,9 @@ import { products, getProduct } from '../products.js';
 import { formatCurrency } from '../utilities/calculate_cash.js';
 import dayjs from '../../package/esm/index.js';
 import { deliveryOptions, getDeliveryOption } from '../deliveryOptions.js';
+import { renderPaymentSummary } from './paymentsummary.js';
 
 
-const today = dayjs();
-const deliveryDate = today.add(7, 'days');
-console.log(deliveryDate.format('dddd, MMMM, D'));
 
 export function renderOrderSummary() {
 
@@ -125,6 +123,8 @@ export function renderOrderSummary() {
                 `.js-cart-item-container-${productId}`
             );
             container.remove();
+
+            renderPaymentSummary();
         });
     });
 
@@ -134,6 +134,7 @@ export function renderOrderSummary() {
             const {productId, deliveryOptionId} = element.dataset;
         updateDeliveryOption(productId, deliveryOptionId);
         renderOrderSummary();
+        renderPaymentSummary();
         });
     });
 
