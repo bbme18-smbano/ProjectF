@@ -1,5 +1,4 @@
 @import url(../fontawesome-free-6.6.0-web/fontawesome-free-6.6.0-web/css/all.css);
-@import url(style-footer.css);
 
 
 :root {
@@ -380,12 +379,13 @@ button .fa-shopping-cart {
 
 /* end of home category */
 
-
+/*
 
 footer {
   padding: 20px;
   background-color: var(--main-color);
 }
+
 
 .footer-top {
   padding: 20px 0;
@@ -423,6 +423,7 @@ footer {
   text-align: center;
 }
 
+*/
 #back-to-top {
   background-color: var(--accent-color);
   color: var(--random-color);
@@ -476,6 +477,8 @@ header {
     flex-direction: column;
   }
 
+/*
+
   .footer-top .row {
     flex-direction: column;
   }
@@ -483,6 +486,7 @@ header {
   .footer-top .col-md-3 {
     margin-bottom: 20px;
   }
+    */
 }
 
 @media (max-width: 480px) {
@@ -500,6 +504,7 @@ header {
   }
 */
 
+
   .footer-top h3 {
     font-size: 16px;
   }
@@ -509,16 +514,17 @@ header {
   }
 }
 
-::-webkit-scrollbar {
+
+html::-webkit-scrollbar {
   width: 15px;
   border-radius: 20px;
 }
 
-::-webkit-scrollbar-truck {
+html::-webkit-scrollbar-truck {
   background: var(--main-color);
 }
 
-::-webkit-scrollbar-thumb {
+html::-webkit-scrollbar-thumb {
   background: linear-gradient(to bottom, var(--main-color) var(--text-color));
   border-radius: 20px;
 }
@@ -685,7 +691,7 @@ header {
 }
 
 .total-row {
-  color: rgb(177, 39, 4);
+  color: var(--price-color);
   font-weight: 700;
   font-size: 18px;
 
