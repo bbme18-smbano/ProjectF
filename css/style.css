@@ -1,4 +1,6 @@
 @import url(../fontawesome-free-6.6.0-web/fontawesome-free-6.6.0-web/css/all.css);
+@import url(style-footer.css);
+
 
 :root {
   --accent-color: #007bff;
