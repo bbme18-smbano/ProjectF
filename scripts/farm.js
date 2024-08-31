@@ -48,6 +48,7 @@ products.forEach((product) => {
     `;
 })
 
+
 nav.forEach((nav) => {
     navHTML += `
     <a href="${nav.link}" class="nav-link">

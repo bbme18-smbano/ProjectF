@@ -1,0 +1,99 @@
+@import url(fontawesome-free-6.6.0-web/fontawesome-free-6.6.0-web/css/all.css);
+
+:root {
+    --accent-color: #007bff;
+    --border-color: #555;
+    --main-color: #0056b3;
+    --text-color: #333;
+    --link-hover: #ddd;
+    --text-mix-color: #fff;
+    --random-color: #ddd;
+    --footer-random: #fdfddf;
+    --price-color: #834343;
+    --fades: background-color 0.3s ease;
+    --fades-link: background-color 0.1s ease-in-out;
+  }
+
+.footer-cm {
+    background-color: var(--main-color);
+    color: var(--text-color);
+    padding: 20px 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-cm .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-cm .footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+
+.footer-cm h3 {
+    color: var(--text-mix-color);
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.footer-cm a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.footer-cm a:hover {
+    color: var(--text-mix-color);
+    text-decoration: underline;
+}
+
+.footer-cm ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-cm li {
+    margin-bottom: 5px;
+}
+
+.footer-cm .bottom a {
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 1.2em;
+}
+
+.footer-cm .bottom {
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid var(--text-color);
+}
+
+.footer-cm .bottom p {
+    margin: 10px 0 0;
+    font-size: 0.9em;
+}
+
+@media only screen and (min-width: 375px) 
+and (max-width: 4250px) {
+    .footer-cm .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-cm .footer-section {
+        margin-bottom: 30px;
+    } 
+
+    .footer-cm .bottom a {
+        margin-bottom: 15px;
+    }
+
+    .footer-cm .bottom {
+        padding: 20px 0;
+    }
+}
