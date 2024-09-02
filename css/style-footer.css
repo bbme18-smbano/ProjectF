@@ -3,6 +3,7 @@
     color: var(--text-color);
     padding: 20px 0;
     font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
 }
 
 .footer-cm .footer-container {
@@ -64,8 +65,7 @@
 
 @media only screen and (min-width: 375px) 
 and (max-width: 4250px) {
-    .footer-cm .footer-container {
-        flex-direction: column;
+    .footer-cm .footer-container { 
         text-align: center;
     }
 

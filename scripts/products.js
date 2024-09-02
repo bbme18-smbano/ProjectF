@@ -65,6 +65,11 @@ export const products = [{
     image: 'images/books-20240711-WA0003.jpg',
     name: 'Books',
     dollar: 1
+},{
+    id: '2024-0106-2031',
+    image: 'images/egg-tray-768x768.webp',
+    name: 'Eggs',
+    dollar: 0.15   
 }];
 
 export const nav = [{
