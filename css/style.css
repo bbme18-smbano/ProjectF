@@ -412,14 +412,12 @@ header {
 }
 
 .header-logo,
-.header-mid {
+.header-mid,
+.header-right {
   display: inline;
 
 }
 
-.header-right {
-  display: none;
-}
   .category-grid {
     grid-template-columns: 1fr;
   }
