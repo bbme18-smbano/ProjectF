@@ -1,14 +1,14 @@
 const categories = [{
-    image: 'images/IMG-20240711-WA0005.jpg',
-    name: 'Shoes and Sneakers',
-    description: 'The home of top quality shoes, sneakers and slides original from top well known brands world wide'
+    image: 'images/biscuitssnacks-1.jpg',
+    name: 'Snacks',
+    description: 'From the cheapiest of your crunchy desires to the rmantic memories with chockoletes and biscuits.'
 },{
-    image: 'images/IMG-20240711-WA0006.jpg',
-    name: 'Farm Foods',
+    image: 'images/bacola-banner-01.jpg',
+    name: 'Farm Corner and Vegies',
     description: 'Get your fresh from the farm greens at an affordable price'
 },{
-    image: 'images/IMG-20240711-WA0004.jpg',
-    name: 'Clothes & Merchindise',
+    image: 'images/stacked-t-shirts.jpg',
+    name: 'Clothes & Merchindise | Coming Soon',
     description: 'Get your top qulity local and international brands and Merch at an in town price in our Store'
 }];
 

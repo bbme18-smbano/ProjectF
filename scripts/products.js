@@ -17,58 +17,58 @@ export const header = [{
 
 export const products = [{
     id: '2024-0106-2022',
-    image: 'images/hanged-t-shirts.jpg',
-    name: 'T-shirt Hanged',
-    dollar: 19
+    image: 'images/19-346x310.webp',
+    name: 'Corn Flakes | 1.2kg',
+    dollar: 9.505
 }, {
     id: '2024-0106-2023',
-    image: 'images/rolled-t-shirts.jpg',
-    name: 'Rolled T-shirts',
-    dollar: 25
+    image: 'images/10131363EA-checkers515Wx515H-346x310.png',
+    name: 'Oros Orange Favoured Juice | 1L',
+    dollar: 1.701
 }, {
     id: '2024-0106-2024',
-    image: 'images/stacked-t-shirts.jpg',
-    name: 'Stacked T-shirts',
-    dollar: 95
+    image: 'images/AdobeStock_34617669-346x310.webp',
+    name: 'Fresh Tomato | 1kg',
+    dollar: 1.125
 }, {
     id: '2024-0106-2025',
-    image: 'images/white-t-shirt.png',
-    name: 'White T-shirts',
-    dollar: 10
+    image: 'images/BB450g-346x310.webp',
+    name: 'Blue Band | 500g',
+    dollar: 3.200
 }, {
     id: '2024-0106-2026',
     image: 'images/pear.jpg',
-    name: 'Pears',
-    dollar: 8
+    name: 'Pears | 1kg',
+    dollar: 0.33
 }, {
     id: '2024-0106-2027',
-    image: 'images/StockCake-Assorted-Fashionable-Hats_1724052966.jpg',
-    name: 'Fashionable Hats',
-    dollar: 5
+    image: 'images/Carrots-346x310.webp',
+    name: 'Fresh Carrots | 1kg',
+    dollar: 1.442
 }, {
     id: '2024-0106-2028',
-    image: 'images/StockCake-Colorful-sneakers-lineup_1724052868.jpg',
-    name: 'Baby Sneakers',
-    dollar: 3
+    image: 'images/Green-Bell-Pepper-346x310.webp',
+    name: 'Green Bell Pepper | 1kg',
+    dollar: 0.865
 }, {
     id: '2024-0106-2029',
-    image: 'images/StockCake-New-canvas-sneakers_1724052896.jpg',
-    name: 'Canvas Sneakers',
-    dollar: 2
+    image: 'images/Illovo1KG.webp',
+    name: 'Illovo Sugar | 1kg',
+    dollar: 1.326
 }, {
     id: '2024-0106-2030',
-    image: 'images/StockCake-Stylish-Athletic-Sneakers_1724052882.jpg',
-    name: 'Athletic Sneakers',
-    dollar: 5.4
+    image: 'images/images-14-346x310.jpeg',
+    name: 'Farmers Pride Rice | 5kg',
+    dollar: 11.822
 }, {
     id: '2024-0106-2031',
-    image: 'images/books-20240711-WA0003.jpg',
-    name: 'Books',
-    dollar: 1
+    image: 'images/images-50-346x310.webp',
+        name: 'Liberty Fruit & Nut | 1kg',
+    dollar: 4.591
 },{
     id: '2024-0106-2031',
     image: 'images/egg-tray-768x768.webp',
-    name: 'Eggs',
+    name: 'Eggs | 1 only',
     dollar: 0.15   
 }];
 
