@@ -96,3 +96,32 @@ backToTop.addEventListener('click', (e) => {
     e.preventDefault();
     window.scrollTo({ top: 0, behavior: 'smooth' });
 });
+
+let startY = 0;
+let isPulling = false;
+
+document.addEventListener('touchstart', function(e) {
+  startY = e.touches[0].clientY;  // Capture where the touch starts
+}, {passive: true});
+
+document.addEventListener('touchmove', function(e) {
+  const currentY = e.touches[0].clientY;
+
+  // Check if the user is pulling down
+  if (currentY > startY && window.scrollY === 0) {
+    isPulling = true;
+    document.getElementById('refresh-indicator').style.display = 'block';  // Show refresh indicator
+  }
+}, {passive: true});
+
+document.addEventListener('touchend', function() {
+  if (isPulling) {
+    // Simulate refreshing the content
+    setTimeout(function() {
+      document.getElementById('refresh-indicator').style.display = 'none';  // Hide refresh indicator
+      alert('Content refreshed!');  // Simulate refresh action (you can replace this with your content reload logic)
+    }, 1000);
+
+    isPulling = false;
+  }
+});
