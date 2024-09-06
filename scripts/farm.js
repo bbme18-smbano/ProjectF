@@ -100,28 +100,42 @@ backToTop.addEventListener('click', (e) => {
 let startY = 0;
 let isPulling = false;
 
+// Capture the initial touch position when the user touches the screen
 document.addEventListener('touchstart', function(e) {
-  startY = e.touches[0].clientY;  // Capture where the touch starts
+  startY = e.touches[0].clientY;  // Store the starting Y position of the touch
 }, {passive: true});
 
+// Detect when the user is pulling down on the screen
 document.addEventListener('touchmove', function(e) {
   const currentY = e.touches[0].clientY;
 
-  // Check if the user is pulling down
+  // If the user is pulling down and the page is scrolled to the top, start the pull-to-refresh action
   if (currentY > startY && window.scrollY === 0) {
     isPulling = true;
     document.getElementById('refresh-indicator').style.display = 'block';  // Show refresh indicator
   }
 }, {passive: true});
 
+// Handle when the user lifts their finger off the screen
 document.addEventListener('touchend', function() {
   if (isPulling) {
-    // Simulate refreshing the content
-    setTimeout(function() {
-      document.getElementById('refresh-indicator').style.display = 'none';  // Hide refresh indicator
-      alert('Content refreshed!');  // Simulate refresh action (you can replace this with your content reload logic)
-    }, 1000);
+    // Simulate an AJAX request to fetch new data and refresh the content
+    fetch('/path/to/data')  // Replace this URL with the actual path to your data
+      .then(response => response.text())  // Get the response as plain text (HTML, for example)
+      .then(data => {
+        // Update the content on the page with the fetched data
+        document.getElementById('content').innerHTML = data;
 
+        // Hide the refresh indicator once the content is updated
+        document.getElementById('refresh-indicator').style.display = 'none';
+      })
+      .catch(error => {
+        console.error('Error fetching new data:', error);
+        // Hide the refresh indicator even if there's an error
+        document.getElementById('refresh-indicator').style.display = 'none';
+      });
+
+    // Reset the pulling flag
     isPulling = false;
   }
 });
